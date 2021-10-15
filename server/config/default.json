@@ -1,5 +1,6 @@
 {
   "serverPort":3000,
-  "dbUrl":"mongodb+srv://vadim:7896321@cluster.i9nxv.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+  "dbUrl":"mongodb+srv://vadim:7896321@cluster.i9nxv.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+  "secretKey":"mern-secret-key"
 
 }
