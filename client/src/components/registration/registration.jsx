@@ -1,19 +1,19 @@
-import React, {useState} from 'react';
-import Input from "../../utils/input/input";
-import {registration} from "../../actions/user";
-import './registration.css'
 
+import React, {useState} from 'react';
+import './registration.css'
+import {registration} from "../../actions/user";
+import Input from "../../utils/input/input";
 
 const Registration = () => {
+    const [email, setEmail] = useState("")
+    const [password, setPassword] = useState("")
 
-    const [email,setEmail]= useState('')
-    const [password , setPassword]= useState('')
     return (
         <div className='registration'>
             <div className="registration__header">Регистрация</div>
-            <Input placeholder='Введите email...' type='text' value={email} setValue={setEmail}/>
-            <Input placeholder='Введите пароль...' type='password' value={password} setValue={setPassword}/>
-            <button onClick={()=> registration(email,password)}>Войти</button>
+            <Input value={email} setValue={setEmail} type="text" placeholder="Введите email..."/>
+            <Input value={password} setValue={setPassword} type="password" placeholder="Введите пароль..."/>
+            <button className="registration__btn" onClick={() => registration(email, password)}>Войти</button>
         </div>
     );
 };
