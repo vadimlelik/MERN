@@ -1,6 +1,7 @@
 {
   "serverPort":5000,
   "dbUrl":"mongodb+srv://vadim:7896321@cluster.i9nxv.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
-  "secretKey":"mern-secret-key"
+  "secretKey":"mern-secret-key",
+  "filePath":"/Users/vadimcvirko/Desktop/MERN/server/files"
 
 }
